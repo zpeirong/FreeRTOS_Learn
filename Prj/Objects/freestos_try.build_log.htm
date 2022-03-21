@@ -1,0 +1,149 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1234 e4gfe, 135246, LIC=ATTQ1-CKPRF-PC6J8-3HN62-UYXS8-0TVF7
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5_mdk\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.4.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\freertos\mdklesson\lesson_1\Prj\freestos_try.uvprojx
+Project File Date:  03/14/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5_mdk\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+../freertos/list.c(72): warning: In file included from...
+../freertos/include\FreeRTOS.h(104): warning: In file included from...
+../freertos/include/portable.h(97): warning: 'portBYTE_ALIGNMENT' is not defined, evaluates to 0 [-Wundef]
+#if portBYTE_ALIGNMENT == 32
+    ^
+../freertos/include/portable.h(101): warning: 'portBYTE_ALIGNMENT' is not defined, evaluates to 0 [-Wundef]
+#if portBYTE_ALIGNMENT == 16
+    ^
+../freertos/include/portable.h(105): warning: 'portBYTE_ALIGNMENT' is not defined, evaluates to 0 [-Wundef]
+#if portBYTE_ALIGNMENT == 8
+    ^
+../freertos/include/portable.h(109): warning: 'portBYTE_ALIGNMENT' is not defined, evaluates to 0 [-Wundef]
+#if portBYTE_ALIGNMENT == 4
+    ^
+../freertos/include/portable.h(113): warning: 'portBYTE_ALIGNMENT' is not defined, evaluates to 0 [-Wundef]
+#if portBYTE_ALIGNMENT == 2
+    ^
+../freertos/include/portable.h(117): warning: 'portBYTE_ALIGNMENT' is not defined, evaluates to 0 [-Wundef]
+#if portBYTE_ALIGNMENT == 1
+    ^
+../freertos/include/portable.h(122): error: "Invalid portBYTE_ALIGNMENT definition"
+        #error "Invalid portBYTE_ALIGNMENT definition"
+         ^
+../freertos/list.c(72): warning: In file included from...
+../freertos/include\FreeRTOS.h(122): error: Missing definition:  configMINIMAL_STACK_SIZE must be defined in FreeRTOSConfig.h.  configMINIMAL_STACK_SIZE defines the size (in words) of the stack allocated to the idle task.  Refer to the demo project provided for your port for a suitable value.
+        #error Missing definition:  configMINIMAL_STACK_SIZE must be defined in FreeRTOSConfig.h.  configMINIMAL_STACK_SIZE defines the size (in words) of the stack allocated to the idle task.  Refer to the demo project provided for your port for a suitable value.
+         ^
+../freertos/include\FreeRTOS.h(126): error: Missing definition:  configMAX_PRIORITIES must be defined in FreeRTOSConfig.h.  See the Configuration section of the FreeRTOS API documentation for details.
+        #error Missing definition:  configMAX_PRIORITIES must be defined in FreeRTOSConfig.h.  See the Configuration section of the FreeRTOS API documentation for details.
+         ^
+../freertos/include\FreeRTOS.h(130): error: Missing definition:  configUSE_PREEMPTION must be defined in FreeRTOSConfig.h as either 1 or 0.  See the Configuration section of the FreeRTOS API documentation for details.
+        #error Missing definition:  configUSE_PREEMPTION must be defined in FreeRTOSConfig.h as either 1 or 0.  See the Configuration section of the FreeRTOS API documentation for details.
+         ^
+../freertos/include\FreeRTOS.h(134): error: Missing definition:  configUSE_IDLE_HOOK must be defined in FreeRTOSConfig.h as either 1 or 0.  See the Configuration section of the FreeRTOS API documentation for details.
+        #error Missing definition:  configUSE_IDLE_HOOK must be defined in FreeRTOSConfig.h as either 1 or 0.  See the Configuration section of the FreeRTOS API documentation for details.
+         ^
+../freertos/include\FreeRTOS.h(138): error: Missing definition:  configUSE_TICK_HOOK must be defined in FreeRTOSConfig.h as either 1 or 0.  See the Configuration section of the FreeRTOS API documentation for details.
+        #error Missing definition:  configUSE_TICK_HOOK must be defined in FreeRTOSConfig.h as either 1 or 0.  See the Configuration section of the FreeRTOS API documentation for details.
+         ^
+../freertos/include\FreeRTOS.h(146): error: configMAX_PRIORITIES must be defined to be greater than or equal to 1.
+        #error configMAX_PRIORITIES must be defined to be greater than or equal to 1.
+         ^
+../freertos/include\FreeRTOS.h(920): warning: 'portSTACK_GROWTH' is not defined, evaluates to 0 [-Wundef]
+        #if ( portSTACK_GROWTH > 0 )
+              ^
+../freertos/list.c(79): error: unknown type name 'List_t'
+void vListInitialise( List_t * const pxList )
+                      ^
+../freertos/list.c(104): warning: no previous prototype for function 'vListInitialiseItem' [-Wmissing-prototypes]
+void vListInitialiseItem( ListItem_t * const pxItem )
+     ^
+../freertos/list.c(104): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void vListInitialiseItem( ListItem_t * const pxItem )
+^
+static 
+../freertos/list.c(112): error: unknown type name 'List_t'
+void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem )
+                     ^
+../freertos/list.c(141): error: unknown type name 'List_t'
+void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem )
+                  ^
+../freertos/list.c(212): error: use of undeclared identifier 'List_t'
+List_t * const pxList = ( List_t * ) pxItemToRemove->pvContainer;
+^
+../freertos/list.c(212): error: expected expression
+List_t * const pxList = ( List_t * ) pxItemToRemove->pvContainer;
+         ^
+../freertos/list.c(221): error: use of undeclared identifier 'pxList'
+        if( pxList->pxIndex == pxItemToRemove )
+            ^
+../freertos/list.c(223): error: use of undeclared identifier 'pxList'
+                pxList->pxIndex = pxItemToRemove->pxPrevious;
+                ^
+../freertos/list.c(231): error: use of undeclared identifier 'pxList'
+        ( pxList->uxNumberOfItems )--;
+          ^
+../freertos/list.c(233): error: use of undeclared identifier 'pxList'
+        return pxList->uxNumberOfItems;
+               ^
+../freertos/list.c(208): warning: no previous prototype for function 'uxListRemove' [-Wmissing-prototypes]
+UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove )
+            ^
+../freertos/list.c(208): note: declare 'static' if the function is not intended to be used outside of this translation unit
+UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove )
+^
+static 
+9 warnings and 16 errors generated.
+compiling list.c...
+assembling startup_ARMCM3.s...
+compiling main.c...
+compiling system_ARMCM3.c...
+".\Objects\freestos_try.axf" - 16 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+   * Component: Startup Version: 1.2.2
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5_mdk\mdk_packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Keil_v5_mdk\mdk_packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM3\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: ARM::Device:Startup:1.2.2
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
